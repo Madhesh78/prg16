@@ -1,6 +1,5 @@
 import React from "react";
 
-// Import required components from react-router-dom
 import {
   BrowserRouter,
   Routes,
@@ -8,15 +7,13 @@ import {
   Link
 } from "react-router-dom";
 
-import Navigation from "./Navigation";
 import Home from "./Home";
 import About from "./About";
 import Contacts from "./Contacts";
 
 function App() {
-
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/prg16">
 
       <div>
 
@@ -32,9 +29,7 @@ function App() {
           </nav>
         </header>
 
-
         <main>
-
           <Routes>
 
             <Route
@@ -53,7 +48,6 @@ function App() {
             />
 
           </Routes>
-
         </main>
 
       </div>
@@ -63,6 +57,3 @@ function App() {
 }
 
 export default App;
-
-
-
